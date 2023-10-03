@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         // Handle missing 'username' or 'password' fields in the JSON data
         $output['error'] = true;
-        $output['msg'] = 'Missing username or password in JSON data';
+        $output['msg'] = 'Missing username or password';
     }
 } else {
     // Handle other HTTP methods (GET, PUT, DELETE, OPTIONS) or invalid requests here
